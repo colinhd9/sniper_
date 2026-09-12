@@ -9,3 +9,4 @@ __pycache__/
 .venv/
 *.egg-info/
 scripts/_panda_notify.txt
+scripts/probe_*.png
