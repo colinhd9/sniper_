@@ -55,8 +55,10 @@ Drei kleine Adobe-Cluster stehen seitlich der Stahlplatten: ein Nahdorf bei ~130
 
 ## Web
 
-Die Seite unter Vercel ist eine **Projektseite**, nicht das Spiel. Ursina/Panda3D läuft nur lokal (`python main.py`).
+Die Seite unter Vercel ist der **atColin-Hub**, nicht das Spiel. Ursina/Panda3D läuft nur lokal (`python main.py`).
 
-- Landing: Ordner [`web/`](web/)
+- Hub: [sniper-jade.vercel.app](https://sniper-jade.vercel.app/)
+- Sniper Range: [sniper-jade.vercel.app/sniper](https://sniper-jade.vercel.app/sniper/)
+- Landing: Ordner [`web/`](web/) — neue Projekte als Icon in `web/index.html` plus Seite unter `web/<name>/`
 - Vercel: Framework **Other**, Root Directory **`web`**
 - Repo: [github.com/colinhd9/sniper_](https://github.com/colinhd9/sniper_)

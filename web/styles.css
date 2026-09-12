@@ -34,6 +34,78 @@ body {
   padding: 3rem 0 4rem;
 }
 
+.wrap-hub {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+}
+
+.hub-brand {
+  margin: 0 0 0.35rem;
+  font-family: "IBM Plex Serif", Georgia, serif;
+  font-size: clamp(2.2rem, 6vw, 3.6rem);
+  font-weight: 600;
+  letter-spacing: -0.03em;
+}
+
+.hub-lead {
+  margin: 0 0 2.4rem;
+  max-width: 28rem;
+  color: var(--muted);
+}
+
+.tiles {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(7.5rem, 1fr));
+  gap: 1.25rem 1rem;
+  max-width: 28rem;
+}
+
+.tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.7rem;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.tile img,
+.tile-mark {
+  width: 5.5rem;
+  height: 5.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.28);
+}
+
+.tile:hover img {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.tile span {
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.tile-soon {
+  color: var(--muted);
+  pointer-events: none;
+}
+
+.tile-mark {
+  display: grid;
+  place-items: center;
+  border: 1px dashed var(--line);
+  background: transparent;
+  box-shadow: none;
+  color: var(--muted);
+  font-size: 1.6rem;
+}
+
 .kicker {
   display: inline-block;
   margin-bottom: 0.75rem;
@@ -123,6 +195,18 @@ a {
 
 .btn:hover {
   background: #2a2618;
+}
+
+.back {
+  display: inline-block;
+  margin-bottom: 1.4rem;
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.back:hover {
+  color: var(--accent);
 }
 
 footer {
