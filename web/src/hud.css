@@ -1,0 +1,151 @@
+.hud {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  color: #f4f0e4;
+  font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
+  z-index: 2;
+}
+
+.hud-scope {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle closest-side at 50% 50%, transparent 62%, rgba(0, 0, 0, 0.94) 63%),
+    linear-gradient(#1a1a1a, #1a1a1a);
+  background-blend-mode: destination-out, source-over;
+}
+
+.hud-scope::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(#1c1c1c, #1c1c1c) center / 2px 72% no-repeat,
+    linear-gradient(#1c1c1c, #1c1c1c) center / 72% 2px no-repeat,
+    radial-gradient(circle at 50% 50%, #1c1c1c 0 3px, transparent 3.5px),
+    radial-gradient(circle at 50% 42%, #1c1c1c 0 2px, transparent 2.5px),
+    radial-gradient(circle at 50% 34%, #1c1c1c 0 2px, transparent 2.5px),
+    radial-gradient(circle at 50% 26%, #1c1c1c 0 2px, transparent 2.5px),
+    radial-gradient(circle at 50% 58%, #1c1c1c 0 2px, transparent 2.5px),
+    radial-gradient(circle at 50% 66%, #1c1c1c 0 2px, transparent 2.5px),
+    radial-gradient(circle at 50% 74%, #1c1c1c 0 2px, transparent 2.5px),
+    radial-gradient(circle at 42% 50%, #1c1c1c 0 2px, transparent 2.5px),
+    radial-gradient(circle at 34% 50%, #1c1c1c 0 2px, transparent 2.5px),
+    radial-gradient(circle at 26% 50%, #1c1c1c 0 2px, transparent 2.5px),
+    radial-gradient(circle at 58% 50%, #1c1c1c 0 2px, transparent 2.5px),
+    radial-gradient(circle at 66% 50%, #1c1c1c 0 2px, transparent 2.5px),
+    radial-gradient(circle at 74% 50%, #1c1c1c 0 2px, transparent 2.5px);
+  pointer-events: none;
+}
+
+.hud-crosshair {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  border: 1.5px solid rgba(20, 20, 18, 0.9);
+  transform: translate(-50%, -50%) rotate(45deg);
+  background: rgba(20, 20, 18, 0.55);
+}
+
+.hud-wind,
+.hud-weapon,
+.hud-range,
+.hud-impact {
+  position: absolute;
+  padding: 0.45rem 0.65rem;
+  background: rgba(0, 0, 0, 0.55);
+  white-space: pre;
+  letter-spacing: 0.01em;
+}
+
+.hud-wind {
+  top: 1rem;
+  left: 1rem;
+  font-size: 0.95rem;
+}
+
+.hud-weapon {
+  right: 1rem;
+  bottom: 3.2rem;
+  font-size: 0.95rem;
+}
+
+.hud-range {
+  left: 50%;
+  bottom: 22%;
+  transform: translateX(-50%);
+  font-size: 1.1rem;
+}
+
+.hud-impact {
+  left: 50%;
+  top: 12%;
+  transform: translateX(-50%);
+  font-size: 1.15rem;
+  color: #8cf28a;
+}
+
+.hud-impact-miss {
+  color: #f29c8c;
+}
+
+.hud-help {
+  position: absolute;
+  left: 50%;
+  bottom: 0.7rem;
+  transform: translateX(-50%);
+  margin: 0;
+  padding: 0.25rem 0.6rem;
+  max-width: calc(100% - 2rem);
+  background: rgba(0, 0, 0, 0.5);
+  color: #ebe6d8;
+  font-size: 0.72rem;
+  text-align: center;
+}
+
+.hud-pause {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-content: center;
+  gap: 0.4rem;
+  background: rgba(10, 12, 8, 0.72);
+  text-align: center;
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+.hud-pause[hidden],
+.hud-scope[hidden],
+.hud-crosshair[hidden],
+.hud-range[hidden],
+.hud-impact[hidden] {
+  display: none;
+}
+
+.hud-pause-kicker {
+  margin: 0;
+  color: #c4a35a;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+}
+
+.hud-pause h1 {
+  margin: 0;
+  font-family: "IBM Plex Serif", Georgia, serif;
+  font-size: clamp(1.8rem, 5vw, 3rem);
+}
+
+.hud-pause p {
+  margin: 0;
+  color: #c4bfae;
+}
+
+.hud-pause a {
+  margin-top: 0.8rem;
+  color: #c4a35a;
+}

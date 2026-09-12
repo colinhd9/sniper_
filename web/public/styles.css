@@ -117,6 +117,11 @@ body {
   text-transform: uppercase;
 }
 
+.kicker-play {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
 h1 {
   margin: 0 0 0.6rem;
   font-family: "IBM Plex Serif", Georgia, serif;
@@ -198,7 +203,7 @@ a {
 }
 
 .back {
-  display: inline-block;
+  display: block;
   margin-bottom: 1.4rem;
   color: var(--muted);
   text-decoration: none;

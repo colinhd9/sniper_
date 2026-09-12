@@ -4,6 +4,7 @@ channels:
   - defaults
 dependencies:
   - python=3.12
+  - nodejs
   - pip
   - pytest
   - pip:
