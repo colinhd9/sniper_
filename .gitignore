@@ -1,0 +1,11 @@
+.miniconda3/
+_miniconda_installer.sh
+__pycache__/
+.pytest_cache/
+*.pyc
+.DS_Store
+.env
+.env.*
+.venv/
+*.egg-info/
+scripts/_panda_notify.txt

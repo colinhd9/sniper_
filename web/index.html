@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sniper Range</title>
+    <meta
+      name="description"
+      content="Desktop-3D-Range: bewegen, Entfernung messen, Fall und Wind ausgleichen. Nicht im Browser spielbar."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Serif:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="wrap">
+      <p class="kicker">Nicht im Browser spielbar</p>
+      <h1>Sniper Range</h1>
+      <p class="lead">
+        3D-Ego-Sandbox auf dem Desktop: frei bewegen, Ziele suchen, Entfernung
+        messen, Kugelfall und Wind ausgleichen. Maßstab 1 Einheit = 1 Meter.
+        Die Kugel ist kein Hitscan — Gravitation und Wind wirken über die
+        Flugzeit.
+      </p>
+
+      <section class="grid">
+        <article class="card">
+          <h2>Waffen</h2>
+          <ul>
+            <li><strong>SR-500</strong> — Repetierer, 500 m/s, Visier 5x / 10x / 20x</li>
+            <li><strong>AK-47</strong> — Vollautomat, 715 m/s, Kimme und Korn</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h2>Dorf und Ziele</h2>
+          <ul>
+            <li>Adobe-Cluster bei ~130 m, ~340 m und ~545 m</li>
+            <li>Laufende Trainingspuppen, Vorhalten bei ~400 m</li>
+            <li>Kopf- und Körpertreffer getrennt</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h2>Steuerung</h2>
+          <ul>
+            <li>WASD, Maus, Shift, C</li>
+            <li>RMB Visier, LMB schießen, R Entfernung</li>
+            <li>1 / 2 Waffe, Esc Pause, Tab Editor</li>
+          </ul>
+        </article>
+      </section>
+
+      <article class="card">
+        <h2>Lokal starten</h2>
+        <p class="lead">Miniconda-Umgebung <code>sniper_range</code>:</p>
+        <pre>source ~/miniconda3/etc/profile.d/conda.sh
+conda activate sniper_range
+python main.py</pre>
+      </article>
+
+      <div class="links">
+        <a class="btn" href="https://github.com/colinhd9/sniper_">Code auf GitHub</a>
+      </div>
+
+      <footer>
+        Diese Vercel-Seite ist nur die Projektinfo. Das Spiel läuft mit Ursina
+        und Panda3D auf dem Rechner, nicht als Web-App.
+      </footer>
+    </main>
+  </body>
+</html>
